@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2013 Robert Ancell <robert.ancell@gmail.com>
+ * Copyright (C) 2017 Brian Douglass <bhdouglass@gmail.com>
  *
  * This program is free software: you can redistribute it and/or modify it under
  * the terms of the GNU General Public License as published by the Free Software
@@ -8,8 +9,8 @@
  * license.
  */
 
-import QtQuick 2.0
-import Ubuntu.Components 1.1
+import QtQuick 2.4
+import Ubuntu.Components 1.3
 
 MainView {
     applicationName: "animal-farm.bhdouglass"
@@ -21,6 +22,10 @@ MainView {
 
     Page {
         anchors.fill: parent
+
+        header: PageHeader {
+            visible: false
+        }
 
         id: wrapper
         property int n_columns: height > width ? 2 : 3
