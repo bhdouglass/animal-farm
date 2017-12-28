@@ -45,7 +45,7 @@ MainView {
                 radius: wrapper.button_radius
                 color: "#fce94f"
                 imageSource: "../assets/cat.png"
-                soundSource: "../assets/cat.wav"
+                soundSource: "../assets/cat.ogg"
             }
 
             AnimalButton {
@@ -54,7 +54,7 @@ MainView {
                 radius: wrapper.button_radius
                 color: "#8ae234"
                 imageSource: "../assets/dog.png"
-                soundSource: "../assets/dog.wav"
+                soundSource: "../assets/dog.ogg"
             }
 
             AnimalButton {
@@ -63,7 +63,7 @@ MainView {
                 radius: wrapper.button_radius
                 color: "#729fcf"
                 imageSource: "../assets/sheep.png"
-                soundSource: "../assets/sheep.wav"
+                soundSource: "../assets/sheep.ogg"
             }
 
             AnimalButton {
@@ -72,7 +72,7 @@ MainView {
                 radius: wrapper.button_radius
                 color: "#e9b96e"
                 imageSource: "../assets/goat.png"
-                soundSource: "../assets/goat.wav"
+                soundSource: "../assets/goat.ogg"
             }
 
             AnimalButton {
@@ -81,7 +81,7 @@ MainView {
                 radius: wrapper.button_radius
                 color: "#fcaf3e"
                 imageSource: "../assets/elephant.png"
-                soundSource: "../assets/elephant.wav"
+                soundSource: "../assets/elephant.ogg"
             }
 
             AnimalButton {
@@ -90,7 +90,7 @@ MainView {
                 radius: wrapper.button_radius
                 color: "#ad7fa8"
                 imageSource: "../assets/cow.png"
-                soundSource: "../assets/cow.wav"
+                soundSource: "../assets/cow.ogg"
             }
         }
     }

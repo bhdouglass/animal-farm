@@ -29,7 +29,7 @@ UbuntuShape {
         fillMode: Image.PreserveAspectFit
     }
 
-    SoundEffect {
+    MediaPlayer {
         id: sound
     }
 
