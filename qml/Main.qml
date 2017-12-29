@@ -49,7 +49,7 @@ MainView {
                 height: wrapper.button_size
                 radius: wrapper.button_radius
                 color: "#fce94f"
-                imageSource: "../assets/cat.png"
+                imageSource: "../assets/cat.svg"
                 soundSource: "../assets/cat.ogg"
             }
 
@@ -58,7 +58,7 @@ MainView {
                 height: wrapper.button_size
                 radius: wrapper.button_radius
                 color: "#8ae234"
-                imageSource: "../assets/dog.png"
+                imageSource: "../assets/dog.svg"
                 soundSource: "../assets/dog.ogg"
             }
 
@@ -67,7 +67,7 @@ MainView {
                 height: wrapper.button_size
                 radius: wrapper.button_radius
                 color: "#729fcf"
-                imageSource: "../assets/sheep.png"
+                imageSource: "../assets/sheep.svg"
                 soundSource: "../assets/sheep.ogg"
             }
 
@@ -76,7 +76,7 @@ MainView {
                 height: wrapper.button_size
                 radius: wrapper.button_radius
                 color: "#e9b96e"
-                imageSource: "../assets/goat.png"
+                imageSource: "../assets/goat.svg"
                 soundSource: "../assets/goat.ogg"
             }
 
@@ -85,7 +85,7 @@ MainView {
                 height: wrapper.button_size
                 radius: wrapper.button_radius
                 color: "#fcaf3e"
-                imageSource: "../assets/elephant.png"
+                imageSource: "../assets/elephant.svg"
                 soundSource: "../assets/elephant.ogg"
             }
 
@@ -94,7 +94,7 @@ MainView {
                 height: wrapper.button_size
                 radius: wrapper.button_radius
                 color: "#ad7fa8"
-                imageSource: "../assets/cow.png"
+                imageSource: "../assets/cow.svg"
                 soundSource: "../assets/cow.ogg"
             }
         }
