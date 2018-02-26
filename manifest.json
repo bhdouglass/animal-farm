@@ -9,7 +9,7 @@
         }
     }, 
     "framework": "ubuntu-sdk-15.04", 
-    "version": "6.1.0", 
+    "version": "6.1.1", 
     "architecture": "all", 
     "description": "A simple game for babies to touch animals and hear them make noises"
 }
