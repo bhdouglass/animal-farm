@@ -8,9 +8,14 @@ This a fork of the [Animal Farm app by Robert Ancell](https://launchpad.net/anim
 
 Build and run using [clickable](https://github.com/bhdouglass/clickable).
 
+## Translations
+
+Translations are handled online via [Transifex](https://www.transifex.com/brian-douglass/animal-farm/).
+A huge thank you to all the translators!
+
 ## License
 
-Copyright (C) 2017 [Brian Douglass](http://bhdouglass.com/)
+Copyright (C) 2018 [Brian Douglass](http://bhdouglass.com/)
 
 This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License version 3, as published
 by the Free Software Foundation.
