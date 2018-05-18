@@ -11,10 +11,7 @@ install:
   - sudo apt-get update
   - sudo apt-get install clickable
   - clickable setup-docker
-  - pip install virtualenv
-  - virtualenv /var/tx-env
-  - source /var/tx-env/bin/activate
-  - pip install transifex-client
+  - sudo pip install transifex-client
 script:
   - clickable clean build click-build
 after_success:
