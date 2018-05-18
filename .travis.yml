@@ -4,8 +4,7 @@ services:
   - docker
 cache:
   directories:
-    - /var/cache/apt/archives
-    - /var/tx-env
+    - "/var/cache/apt/archives"
 install:
   - sudo add-apt-repository ppa:bhdouglass/clickable -y
   - sudo apt-get update
@@ -17,3 +16,13 @@ script:
 after_success:
   - sudo echo $'[https://www.transifex.com]\nhostname = https://www.transifex.com\nusername = api\npassword = '"$TRANSIFEX_PASSWORD"' > ~/.transifexrc
   - tx push -s
+deploy:
+  provider: releases
+  api_key:
+    secure: U1iTxfKyVt4FJyt1ngi2pU7Zb6GuWtr9IffaLGpS4bqCMXLxpicG0M1qbvUhvqvSXeEjlcWKPLvt/PQoCYLMnxl7kb3loM+fHK5na9c+RQiNVb0BqGtDZQoF7GOh0qmXtp5eOXHoq5c8hdYtdDrki/muR45xWd7kiD//8P71NFyOv3ImjgZcvNg+c3T0idrr1b2ACO7WgwEkzRGZVRGiEvWewr3P+RmnZ5IEKAnL8zv2sL7+pwLtMxa2g0XgXeOf2icZFFT6iuLAIuTcdlEk56FpMu8HCyVfO1IimyB8iBAkvIxSXx593IG9U+5UDDYFaAZ3wexi/fKOusOMCpZWErglMM4V7XdKXsOyNQMpoUPm2pDyTHHD2JtDh+PdbEhNYzgKQwW4TLLO139cmlsowmdqehUUC3uyiwS/m12m3gM7iTqYwRqBODowyBhyexNry9QT708rrqY3c2sYoKKloTlfE6qNdQbw0KHNy7iw8uoca/3p4t3iH7yUvnTaIgLmCc75Q1u/8/qUKZXWJskGwgogRtpvrqkRaQn1e+oycMUOWl6/xOJXiYZpANBdd7R8Vx3XsCQBUMaiM2CT7u48Pn9vwOxbyz8fETv9Oq6GM+a97XEaaN44+HCGXgcmYnXTZX/EEkfAYMM5ggmLwkULp7d+0FGigFnIaTYaANs3g34=
+  file: build/*.click
+  on:
+    repo: bhdouglass/animal-farm
+  skip_cleanup: true
+  on:
+    tags: true
