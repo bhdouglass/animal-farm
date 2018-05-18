@@ -1,0 +1,10 @@
+[main]
+host = https://www.transifex.com
+
+[animal-farm.animal-farm-bhdouglass-pot]
+file_filter = po/<lang>.po
+minimum_perc = 0
+source_file = po/animal-farm.bhdouglass.pot
+source_lang = en
+type = PO
+

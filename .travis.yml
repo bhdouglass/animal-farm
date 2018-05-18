@@ -1,0 +1,19 @@
+sudo: required
+services:
+  - docker
+cache:
+  directories:
+    - /var/cache/apt/archives
+install:
+  - sudo add-apt-repository ppa:bhdouglass/clickable -y
+  - sudo apt-get update
+  - sudo apt-get install clickable
+script:
+  - clickable setup-docker
+after_success:
+  - pip install virtualenv
+  - virtualenv ~/env
+  - source ~/env/bin/activate
+  - pip install transifex-client
+  - sudo echo $'[https://www.transifex.com]\nhostname = https://www.transifex.com\nusername = api\npassword = '"$TRANSIFEX_PASSWORD"' > ~/.transifexrc
+  - tx push -s
